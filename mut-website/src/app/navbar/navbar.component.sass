@@ -1,9 +1,6 @@
 .spacer
   flex: 1 1 auto
   
-.buttonspacer
-  padding: 5px 8px 5px 8px
-
 .mat-toolbar
   background: #a14cf1
   color: #ffffff
@@ -35,6 +32,7 @@ img
   text-decoration: none
   background-color: var(--backgroundColor)
   color: #ffffff
+  padding: 5px 8px 5px 8px
 
   --backgroundColor: #a14cf1
   --hoverColor: #bc77fc
@@ -57,12 +55,12 @@ img
 .flat-raised-button
   text-decoration: none
   background-color: var(--backgroundColor)
-  color: #ffffff
+  color: #000000
   z-index: 1
   transition: color 300ms ease-in-out
 
-  --backgroundColor: #a14cf1
-  --hoverColor: #bc77fc
+  --backgroundColor: #ffffff
+  --hoverColor: #a7a7a7
   --randomColor: '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0')
 
 .flat-raised-button::before
@@ -74,7 +72,7 @@ img
   right: 0
   z-index: -1
   background-color: var(--hoverColor)
-  transition: transform 300ms ease-in-out
+  transition: transform 200ms ease-in-out
   transform: scaleX(0)
   transform-origin: left
 

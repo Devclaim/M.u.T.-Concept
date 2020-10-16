@@ -4,18 +4,15 @@
 
 <div #stickyMenu [class.sticky]="sticky">
     <mat-toolbar color="primary" class="mat-elevation-z4" id="navbar">
-        <mat-toolbar-row class="mat-toolbar-row">
+        <mat-toolbar-row cla ss="mat-toolbar-row">
             <span class="span"> Wilkommen bei MuT</span>
             <span class="spacer"></span>
-            <a class="flat-button" mat-flat-button > Idee und Konzeption </a>
-            <span class="buttonspacer"></span>
-            <a class="flat-button" mat-flat-button > Das MuT Team </a>
-            <span class="buttonspacer"></span>
-            <a class="flat-button" mat-flat-button > Fit4Life durch Vorbilder </a>
-            <span class="buttonspacer"></span>
+            <a class="flat-button" mat-flat-button> Idee und Konzeption </a>
+            <a class="flat-button" mat-flat-button> Das MuT Team </a>
+            <a class="flat-button" mat-flat-button> Fit4Life durch Vorbilder </a>
             <a class="flat-button" mat-flat-button> Gewonnene Preise </a>
             <span class="spacer"></span>
-            <a class="flat-raised-button" mat-raised-button (mouseover)="getRandomColor()" [ngStyle]="{color: color}" (mouseleave)="setIdleColor()" >
+            <a class="flat-raised-button" mat-raised-button (mouseover)="getRandomColor()" [ngStyle]="{color: color}"(mouseleave)="setIdleColor()">
                 Mithelfen oder Spenden </a>
         </mat-toolbar-row>
     </mat-toolbar>
