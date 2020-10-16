@@ -7,12 +7,15 @@
         <mat-toolbar-row class="mat-toolbar-row">
             <span class="span"> Wilkommen bei MuT</span>
             <span class="spacer"></span>
-            <a class="span" mat-button> Idee und Konzeption </a>
-            <a class="span" mat-button> Das MuT Team </a>
-            <a class="span" mat-button> Fit4Life durch Vorbilder </a>
-            <a class="span" mat-button> Gewonnene Preise </a>
+            <a class="flat-button" mat-flat-button > Idee und Konzeption </a>
+            <span class="buttonspacer"></span>
+            <a class="flat-button" mat-flat-button > Das MuT Team </a>
+            <span class="buttonspacer"></span>
+            <a class="flat-button" mat-flat-button > Fit4Life durch Vorbilder </a>
+            <span class="buttonspacer"></span>
+            <a class="flat-button" mat-flat-button> Gewonnene Preise </a>
             <span class="spacer"></span>
-            <a class="span" mat-raised-button (mouseover)="getRandomColor()" [ngStyle]="{color: color}" (mouseleave)="setIdleColor()">
+            <a class="flat-raised-button" mat-raised-button (mouseover)="getRandomColor()" [ngStyle]="{color: color}" (mouseleave)="setIdleColor()" >
                 Mithelfen oder Spenden </a>
         </mat-toolbar-row>
     </mat-toolbar>
