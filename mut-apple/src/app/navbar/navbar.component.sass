@@ -1,0 +1,75 @@
+.spacer
+  flex: 1 1 auto
+  
+
+.mat-toolbar
+  background: #242424
+  color: #ffffff
+  position: fixed
+    left: 0
+    top: 0
+    width: 100%
+  opacity: 0.9
+  
+
+.mat-toolbar-row 
+  justify-content: center
+  
+
+.span
+  text-decoration: none
+  background: #242424
+  color: #ffffff
+  padding-left: 10px 
+
+.flat-button
+  text-decoration: none
+  background-color: var(--backgroundColor)
+  color: #ffffff
+  padding: 5px 8px 5px 8px
+
+  --backgroundColor: #242424
+  --hoverColor: #ffffff
+
+.flat-button::before
+  content: ""
+  position: absolute
+  height: 3px
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: var(--hoverColor)
+  transition: transform  300ms ease-in-out
+  transform: scaleX(0)
+
+.flat-button:hover::before,
+.flat-button:focus::before
+  transform: scaleX(1)
+
+.flat-raised-button
+  text-decoration: none
+  background-color: var(--backgroundColor)
+  color: #ffffff
+  z-index: 1
+  transition: color 300ms ease-in-out
+
+  --backgroundColor: #eb4646
+  --hoverColor: #f1a3a3
+  --randomColor: '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0')
+
+.flat-raised-button::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -1
+  background-color: var(--hoverColor)
+  transition: transform 200ms ease-in-out
+  transform: scaleX(0)
+  transform-origin: left
+
+.flat-raised-button:hover::before,
+.flat-raised-button:focus::before
+  transform: scaleX(1)
