@@ -32,7 +32,7 @@ export class NavbarComponent {
   }
 
   setIdleColor(){
-    this.color = '#000000'
+    this.color = '#ffffff'
   }
 
 }
