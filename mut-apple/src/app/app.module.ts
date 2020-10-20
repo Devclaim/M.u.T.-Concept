@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+
 @NgModule({
   declarations: [
     AppComponent,
